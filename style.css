@@ -303,4 +303,65 @@ template {
 [hidden] {
   display: none; }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.background {
+  background-image: url("./img/Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px; }
+  .header-logo {
+    opacity: 0.4; }
+
+.main {
+  display: flex; }
+  .main .col {
+    width: 50%;
+    padding: 30px; }
+
+.inp {
+  display: block;
+  width: 100%;
+  border: 2px solid #c6c6c6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 34px;
+  padding: 0 15px;
+  color: #c6c6c6; }
+  .inp ::-webkit-input-placeholder {
+    color: "$bordergray"; }
+  .inp :-moz-placeholder {
+    color: "$bordergray"; }
+  .inp ::-moz-placeholder {
+    color: "$bordergray"; }
+  .inp :-ms-input-placeholder {
+    color: "$bordergray"; }
+
+.section .border-wrapper {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px; }
+.section .content-wrapper {
+  background-color: #f4f4f4;
+  padding: 25px;
+  border-radius: 3px; }
+.section .section-heading {
+  text-align: center;
+  color: #fff; }
+
+.footer-logo {
+  opacity: 0.4; }
+
 /*# sourceMappingURL=style.css.map */

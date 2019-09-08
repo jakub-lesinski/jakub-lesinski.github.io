@@ -1,0 +1,22 @@
+.section {
+    .border-wrapper {
+        padding: 15px;
+        background-color: rgba(#000,0.4);
+        border-radius: 3px;
+    }
+    
+    .content-wrapper {
+        background-color: $backgroundWhite;
+        padding: 25px;
+        border-radius: 3px;
+    }
+    
+    .section-heading {
+        text-align: center;
+        color: #fff;
+    }
+}
+
+#registerForm {
+
+}
