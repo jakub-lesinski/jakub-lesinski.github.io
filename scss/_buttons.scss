@@ -1,3 +1,20 @@
-.btn {
+.button-sign,
+.button {
+    background-color: $buttongreen;
+    color: $backgroundWhite;
+    width: 100%;
+    height: 45px;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 30px;
+    text-shadow: 1.5px 1.5px 1px  rgba(#000,0.4);
+}
+.button-sign:hover,
+.button:hover {
+    background-color: #8cbb3b;
+}
 
+.button-sign {
+    width: 125px;
+    font-size: 20px;
 }
