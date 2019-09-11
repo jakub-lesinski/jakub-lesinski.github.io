@@ -1,17 +1,17 @@
-@mixin placeholder($color) {
+@mixin placeholder($bordergray) {
     ::-webkit-input-placeholder {
-        color: $color;
+        color: $bordergray;
     }
 
     :-moz-placeholder {
-        color: $color;
+        color: $bordergray;
     }
 
     ::-moz-placeholder {
-        color: $color;
+        color: $bordergray;
     }
 
     :-ms-input-placeholder {
-        color: $color;
+        color: $bordergray;
     }
 }

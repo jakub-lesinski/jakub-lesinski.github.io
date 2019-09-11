@@ -1,29 +1,31 @@
 .section {
+    display: flex;
+    justify-content: center;
+
     .border-wrapper {
         padding: 15px;
         background-color: rgba(#000,0.4);
         border-radius: 3px;
+        width: 50%;
+        max-width: 420px;
     }
+    
     .sign-content-wrapper,
     .content-wrapper {
         background-color: $backgroundWhite;
         padding: 25px;
         border-radius: 10px;
     }
-    
-    .section-heading {
-        text-align: center;
-        color: #fff;
-        font-size: 34px;
-        margin-top: 50px;
-        margin-bottom: 50px ;
+     
+    .subscribe,
+    .recover {
+        display: flex;
+        justify-content: space-between;
     }
-}
-
-.sign-content-wrapper {
     
-}
-
-#registerForm {
-
+    .sign {
+        display: flex;
+        justify-content: flex-end;
+    }
+    margin-bottom: 50px;
 }

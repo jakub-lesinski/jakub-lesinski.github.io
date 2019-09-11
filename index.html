@@ -15,8 +15,8 @@
     </div>
     <div class="main">
         <div class="col">
-            <section class="section" id="registerForm">
-                <h2 class="section-heading">Register Form</h2>
+            <h2 class="heading">Register Form</h2>
+            <section class="section">   
                 <div class="border-wrapper">
                     <div class="content-wrapper">
                         <form >
@@ -24,23 +24,25 @@
                             <input type="password" class="inp" placeholder="Password">
                             <input type="password" class="inp" placeholder="Confirm Password">
                             <input type="email" class="inp" placeholder="Email">
-                            <!-- <select>
-                                <option value="dog">Dog</option>
-                                <option value="cat">Cat</option>
-                            </select> -->
+                            <select class="options">
+                                <option value="your-location">Your Location</option>
+                                <option value="asia">Asia</option>
+                                <option value="europe">Europe</option>
+                                <option value="usa">USA</option>
+                            </select>
                         </form>
                         <button type="submit"class="button">Sign up</button>
                     </div>
                 </div>
             </section>
-            <section class="section" id="registerForm">
-                <h2 class="section-heading">Send Email</h2>
+            <h2 class="heading">Send Email</h2>
+            <section class="section">
                 <div class="border-wrapper">
                     <div class="content-wrapper">
                         <form >
                             <input type="text" class="inp" placeholder="Name">
                             <input type="email" class="inp" placeholder="Email">
-                            <textarea cols="65" rows="10"class="textarea" placeholder="Type your message..."></textarea>
+                            <textarea cols="65" rows="10" class="textarea" placeholder="Type your message..."></textarea>
                         </form>
                         <button type="submit" class="button">Send Email</button>
                     </div>
@@ -48,35 +50,46 @@
             </section>
         </div>
         <div class="col">
-            <section class="section" id="SignForm">
-                <h2 class="section-heading">Sign in form</h2>
+            <h2 class="heading">Sign in Form</h2>
+            <section class="section">
                 <div class="border-wrapper">
                     <div class="sign-content-wrapper">
                         <form>
                             <input type="text" class="inp" placeholder="Username">
                             <input type="password" class="inp" placeholder="Password">
-                            <button type="submit" class="button-sign">Sign in</button> 
                         </form>
+                        <div class="sign">
+                            <button type="submit" class="button-small">Sign in</button> 
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="section"><h2 class="section-heading">Recover Form</h2>
+            <h2 class="heading">Recover Form</h2>
+            <section class="section">
                 <div class="border-wrapper">
                     <div class="content-wrapper">
-                     <form >
+                     <form>
                          <input type="email" class="inp" placeholder="Enter your Email">
                          <input type="tel" class="inp" placeholder="Enter your Phone number">
-                     </form>   
+                     </form>
+                     <div class="recover">
+                         <button class="button-small">Send</button>
+                         <button class="button-small-off">Done</button>
+                     </div>   
                     </div>
                 </div>
             </section>
+            <h2 class="heading">Subscribe Form</h2>
             <section class="section">
-                <h2 class="section-heading">Subscribe Fojrm</h2>
                 <div class="border-wrapper">
                     <div class="content-wrapper">
-                        <form >
+                        <form>
                             <input type="email" class="inp" placeholder="Enter you Email">
-                        </form>    
+                        </form>
+                        <div class="subscribe">
+                            <button class="button-small">subscribe</button>
+                            <button class="button-red">No, Thanks</button>
+                        </div>
                     </div>
                 </div>
             </section>
