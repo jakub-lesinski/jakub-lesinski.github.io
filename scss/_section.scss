@@ -3,18 +3,18 @@
     justify-content: center;
 
     .border-wrapper {
-        padding: 15px;
-        background-color: rgba(#000,0.4);
         border-radius: 3px;
+        background-color: rgba($black,0.4);
+        padding: 15px;
         width: 50%;
         max-width: 420px;
     }
     
     .sign-content-wrapper,
     .content-wrapper {
+        border-radius: 10px;
         background-color: $backgroundWhite;
         padding: 25px;
-        border-radius: 10px;
     }
      
     .subscribe,

@@ -351,8 +351,8 @@ template {
 }
 
 .container {
-  max-width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .header {
@@ -368,25 +368,24 @@ template {
   display: flex;
 }
 .main .col {
-  width: 50%;
   padding: 30px;
+  width: 50%;
 }
 .main .col .heading {
+  margin: 50px 0;
   text-align: center;
   color: #fff;
   font-size: 34px;
-  margin: 50px 0;
 }
 
 .textarea,
 .inp {
-  display: block;
-  width: 100%;
+  margin-bottom: 20px;
   border: 2px solid #c6c6c6;
   border-radius: 5px;
-  margin-bottom: 20px;
-  height: 34px;
   padding: 0 15px;
+  width: 100%;
+  height: 34px;
   color: #c6c6c6;
 }
 .textarea ::-webkit-input-placeholder,
@@ -411,35 +410,24 @@ template {
 }
 
 .options {
-  color: #c6c6c6;
   margin-bottom: 20px;
+  padding: 0 10px;
   width: 100%;
   height: 34px;
-  padding: 0 10px;
+  color: #c6c6c6;
 }
 
-.button-small-off,
-.button-red,
-.button-small,
 .button {
-  background-color: #96d12f;
-  color: #f4f4f4;
-  width: 100%;
-  height: 45px;
   border: 1px solid #008000;
   border-radius: 5px;
-  font-size: 30px;
+  background-color: #96d12f;
+  width: 137px;
+  height: 45px;
   text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
+  color: #f4f4f4;
+  font-size: 30px;
+  width: 100%;
 }
-.button-small-off-small-off:hover, .button-small-off-small:hover, .button-small-off:hover,
-.button-red-small-off:hover,
-.button-red-small:hover,
-.button-red:hover,
-.button-small-small-off:hover,
-.button-small-small:hover,
-.button-small:hover,
-.button-small-off:hover,
-.button-small:hover,
 .button:hover {
   background-color: #8cbb3b;
 }
@@ -447,15 +435,38 @@ template {
 .button-small-off,
 .button-red,
 .button-small {
+  border: 1px solid #008000;
+  border-radius: 5px;
+  background-color: #96d12f;
   width: 137px;
+  height: 45px;
+  text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
+  color: #f4f4f4;
+  font-size: 30px;
   font-size: 20px;
+}
+.button-small-off:hover,
+.button-red:hover,
+.button-small:hover {
+  background-color: #8cbb3b;
 }
 
 .button-red {
+  border: 1px solid #008000;
+  border-radius: 5px;
+  background-color: #96d12f;
+  width: 137px;
+  height: 45px;
+  text-shadow: 1.5px 1.5px 1px rgba(0, 0, 0, 0.4);
+  color: #f4f4f4;
+  font-size: 30px;
   background-color: #f34455;
   border: 1px solid #FF0000;
+  font-size: 20px;
 }
-
+.button-red:hover {
+  background-color: #8cbb3b;
+}
 .button-red:hover {
   background-color: #e1293c;
 }
@@ -470,17 +481,17 @@ template {
   margin-bottom: 50px;
 }
 .section .border-wrapper {
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
   width: 50%;
   max-width: 420px;
 }
 .section .sign-content-wrapper,
 .section .content-wrapper {
+  border-radius: 10px;
   background-color: #f4f4f4;
   padding: 25px;
-  border-radius: 10px;
 }
 .section .subscribe,
 .section .recover {
