@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    
+   .col {
+       padding: 30px;
+        width: 50%;
+
+        .heading {
+            margin: 50px 0;
+            text-align: center;
+            color: $white;
+            font-size: 34px;
+        }
+    }
+}  

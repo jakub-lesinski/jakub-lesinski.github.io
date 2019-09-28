@@ -1,0 +1,41 @@
+@mixin global-button-styling {
+    border: 1px solid $green;
+    border-radius: 5px;
+    background-color: $buttongreen;
+    width: 137px;
+    height: 45px;
+    text-shadow: 1.5px 1.5px 1px  rgba($black,0.4);
+    color: $backgroundWhite;
+    font-size: 30px;
+
+    &:hover {
+        background-color:$hovergreen;
+    }
+}
+
+.button {
+    @include global-button-styling;
+    width: 100%;
+}
+
+.button-small-off,
+.button-red,
+.button-small {
+    @include global-button-styling;
+    font-size: 20px;
+}
+
+.button-red {
+    @include global-button-styling;
+    background-color: $buttonred;
+    border:1px solid $red;
+    font-size: 20px;
+
+    &:hover {
+        background-color: $hoverred;
+    }
+}
+
+.button-small-off {
+    opacity: 0.6;
+}

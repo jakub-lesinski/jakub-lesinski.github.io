@@ -1,0 +1,17 @@
+@mixin placeholder($bordergray) {
+    ::-webkit-input-placeholder {
+        color: $bordergray;
+    }
+
+    :-moz-placeholder {
+        color: $bordergray;
+    }
+
+    ::-moz-placeholder {
+        color: $bordergray;
+    }
+
+    :-ms-input-placeholder {
+        color: $bordergray;
+    }
+}
