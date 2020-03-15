@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="20" height="24">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ececec } 
+	</style>
+	<g id="Top Footer">
+		<g id="Middle Column">
+			<path id="Media Icon" class="shp0" d="M1.43 20.59C1.43 21.94 1.52 22.84 2.7 22.16L7.61 19.1C8.78 18.41 10.71 17.3 11.88 16.61L17.16 13.55C18.33 12.87 18.35 11.75 17.18 11.07L11.96 8C10.79 7.32 8.95 6.2 7.78 5.52L2.69 2.46C1.52 1.77 1.43 2.67 1.43 4.03L1.43 20.59Z" />
+		</g>
+	</g>
+</svg>

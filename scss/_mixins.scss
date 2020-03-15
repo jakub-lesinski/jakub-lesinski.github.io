@@ -1,0 +1,531 @@
+@mixin section-header {
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@mixin section-text {
+  text-align: center;
+  margin-bottom: 60px;
+  opacity: 0.6;
+}
+
+@mixin small-smartphone {
+  @media screen and (max-width: $small) {
+    .header {
+      .logo {
+        margin-left: 1rem;
+      }
+
+      .icon-menu {
+        margin-right: 1rem;
+        display: block;
+
+        &:focus ~ .nav,
+        .nav:hover {
+          transform: translate(-10rem);
+          display: flex;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .nav {
+      flex-direction: column;
+      position: absolute;
+      right: -50%;
+      top: 15%;
+      width: 200px;
+      height: 148px;
+      display: none;
+
+      .nav-item {
+        margin: 0.4rem;
+      }
+    }
+
+    .portfolio {
+      background-position: center;
+    }
+
+    .hea {
+      width: 80%;
+    }
+
+    .part-heading {
+      margin-top: 100px;
+    }
+
+    .services {
+      height: 1100px;
+
+      .services-content {
+        flex-direction: column;
+        &-element {
+          justify-content: center;
+          align-items: center;
+          margin: 0 0 100px 0;
+        }
+      }
+    }
+
+    .learn-more {
+      .gear {
+        display: none;
+      }
+
+      .background {
+        left: 0;
+
+        .backdrop {
+          width: 26rem;
+        }
+
+        .overlayer {
+          width: 26rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .checkmarks {
+            width: 22.2rem;
+
+            .checkmark {
+              margin: 0 0 0 2rem;
+            }
+          }
+
+          .learn-more-button {
+            margin: 0;
+          }
+
+          .heading {
+            width: 22.2rem;
+            margin: 0;
+          }
+
+          .text {
+            width: 18rem;
+            margin: 2rem 1rem;
+          }
+        }
+      }
+    }
+
+    .latest-project {
+      height: 100%;
+      .box {
+        flex-direction: column;
+        justify-content: center;
+      }
+      .text-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: 1;
+
+        .part-text {
+          width: 350px;
+          text-align: center;
+          margin-left: 3rem;
+        }
+
+        .box-icons {
+          width: 300px;
+          margin-left: 3rem;
+          justify-content: center;
+
+          .dupa {
+            width: 200px;
+          }
+
+          .icon {
+            width: 4rem;
+          }
+        }
+      }
+
+      .image-col {
+        order: 2;
+      }
+    }
+
+    .culture-values {
+      height: 100%;
+
+      &-items {
+        flex-direction: column;
+        margin: 0;
+
+        .item::before {
+          width: 50%;
+          top: -10%;
+          left: 25%;
+        }
+      }
+    }
+
+    .our-clients {
+      height: 100%;
+
+      &-posts {
+        margin: 0;
+        .post {
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+
+          .pic {
+            margin: 0;
+          }
+
+          .comment,
+          .comment-reverse {
+            width: 15rem;
+            height: 25rem;
+          }
+
+          .comment-reverse {
+            order: 1;
+          }
+
+          .comment::before,
+          .comment-reverse::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .contact {
+      height: 100%;
+
+      &-button {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .logos {
+      flex-direction: column;
+      height: 100%;
+
+      .logo {
+        margin-bottom: 2rem;
+
+        &:first-of-type {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .top-footer {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding: 0;
+
+      .col {
+        width: 10rem;
+        margin: 0;
+
+        &:last-of-type {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .bottom-footer {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@mixin medium-smarthphone {
+  @media screen and (min-width: $small) and (max-width: $medium) {
+    .header {
+      .logo {
+        margin-left: 1rem;
+      }
+
+      .icon-menu {
+        margin-right: 1rem;
+        display: block;
+
+        &:focus ~ .nav,
+        .nav:hover {
+          transform: translate(-12rem);
+          display: flex;
+          background-color: #fff;
+        }
+      }
+    }
+
+    .nav {
+      flex-direction: column;
+      position: absolute;
+      right: -50%;
+      top: 15%;
+      width: 400px;
+      height: 148px;
+      display: none;
+
+      .nav-item {
+        margin: 0.4rem;
+      }
+    }
+
+    .portfolio {
+      width: 100%;
+      background-position: left;
+      .hea {
+      width: 100%;
+      }
+    }
+
+    .services {
+      height: 100%;
+
+      &-content {
+        flex-direction: column;
+        
+        &-element {
+          margin: 2rem 0;
+        }
+      }
+    }
+
+    .learn-more {
+      .gear {
+        display: none;
+      }
+
+      .background {
+        left: 0;
+
+        .backdrop {
+          width: 40rem;
+        }
+
+        .overlayer {
+          width: 40rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .checkmarks {
+            width: 22.2rem;
+
+            .checkmark {
+              margin: 0 0 0 2rem;
+            }
+          }
+
+          .learn-more-button {
+            margin: 0;
+          }
+
+          .heading {
+            width: 22.2rem;
+            margin: 0;
+          }
+
+          .text {
+            width: 18rem;
+            margin: 2rem 1rem;
+          }
+        }
+      }
+    }
+
+    .latest-project {
+      height: 100%;
+      .box {
+        flex-direction: column;
+      }
+    }
+
+    .culture-values {
+      height: 100%;
+
+      &-items {
+        flex-direction: column;
+        margin: 0;
+
+        .item::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 50%;
+          height: 2px;
+          background:$grey;
+          top: -10%;
+          left: 25%;
+        }
+      }
+    }
+
+    .our-clients {
+      height: 100%;
+
+      &-posts {
+        margin: 0;
+        .post {
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+
+          .pic {
+            margin: 0;
+          }
+
+          .comment,
+          .comment-reverse {
+            width: 15rem;
+            height: 25rem;
+          }
+
+          .comment-reverse {
+            order: 1;
+          }
+
+          .comment::before,
+          .comment-reverse::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .logos {
+      height: 100%;
+      flex-direction: column;
+
+      .logo {
+        margin: 2rem;
+      }
+    }
+
+    .top-footer {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      padding: 0;
+
+      .col {
+        width: 10rem;
+        margin: 0;
+
+        &:last-of-type {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .bottom-footer {
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $medium) and (max-width: $large) {
+    .header {
+      padding: 0 2rem;
+    }
+
+    .portfolio {
+      background-position: center;
+    }
+
+    .services {
+      height: 100%;
+      &-content {
+        flex-direction: column;
+
+        &-element {
+          margin: 2rem 0;
+        }
+      }
+    }
+
+    .learn-more {
+      .gear {
+        display: none;
+      }
+
+      .background {
+        left: 0;
+        
+
+        .backdrop {
+          width: 62rem;
+        }
+
+        .overlayer {
+          width: 62rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .checkmarks {
+            width: 22.2rem;
+
+            .checkmark {
+              margin: 0 0 0 2rem;
+            }
+          }
+
+          .learn-more-button {
+            margin: 0;
+          }
+
+          .heading {
+            width: 22.2rem;
+            margin: 0;
+            padding: 0 1rem;
+          }
+
+          .text {
+            width: 18rem;
+            margin: 2rem 1rem;
+          }
+        }
+      }
+    }
+
+    .latest-project {
+      height: 100%;
+      .box {
+        flex-direction: column;
+      }
+    }
+
+    .our-clients {
+
+      &-posts {
+
+        .post {
+          .quotation {
+            font-size: .6rem;
+          }
+        }
+      }
+    }
+
+    .top-footer {
+      height: 100%;
+      padding: 0 5rem;
+    }
+  }
+}
